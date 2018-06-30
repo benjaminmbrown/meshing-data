@@ -35,6 +35,10 @@
     "webpack-dev-server": "^2.3.0"
   },
   "dependencies": {
-    "openzeppelin-solidity": "1.10.0"
+    "bootstrap": "^4.1.1",
+    "expose-loader": "^0.7.5",
+    "jquery": "^3.3.1",
+    "openzeppelin-solidity": "1.10.0",
+    "popper.js": "^1.14.3"
   }
 }
