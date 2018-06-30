@@ -1,0 +1,181 @@
+{
+  "contractName": "MeshBounty",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a72305820c43f8091b3c20cb05831a84a8e5a2bde17a81018c98283ae6e38ee253167ce860029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a72305820c43f8091b3c20cb05831a84a8e5a2bde17a81018c98283ae6e38ee253167ce860029",
+  "sourceMap": "27:58:1:-;;;53:29;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:29:1;27:58;;;;;;",
+  "deployedSourceMap": "27:58:1:-;;;;;",
+  "source": "pragma solidity ^0.4.24;\n\n\ncontract MeshBounty{\n\n    constructor() public {\n\n    }\n\n}",
+  "sourcePath": "/Users/benbrown/Desktop/dev/meshing-data/contracts/MeshBounty.sol",
+  "ast": {
+    "absolutePath": "/Users/benbrown/Desktop/dev/meshing-data/contracts/MeshBounty.sol",
+    "exportedSymbols": {
+      "MeshBounty": [
+        13
+      ]
+    },
+    "id": 14,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 13,
+        "linearizedBaseContracts": [
+          13
+        ],
+        "name": "MeshBounty",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 11,
+              "nodeType": "Block",
+              "src": "74:8:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 12,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "64:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 10,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "74:0:1"
+            },
+            "scope": 13,
+            "src": "53:29:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 14,
+        "src": "27:58:1"
+      }
+    ],
+    "src": "0:85:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/benbrown/Desktop/dev/meshing-data/contracts/MeshBounty.sol",
+    "exportedSymbols": {
+      "MeshBounty": [
+        13
+      ]
+    },
+    "id": 14,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 13,
+        "linearizedBaseContracts": [
+          13
+        ],
+        "name": "MeshBounty",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 11,
+              "nodeType": "Block",
+              "src": "74:8:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 12,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "64:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 10,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "74:0:1"
+            },
+            "scope": 13,
+            "src": "53:29:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 14,
+        "src": "27:58:1"
+      }
+    ],
+    "src": "0:85:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x2b4204de8a139df548af9f293fd4a0071878e6a8",
+      "transactionHash": "0x7b02a6d457f718e1c2bd5675c57f744380ac573d251ffa51c54b000e27defc85"
+    }
+  },
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-06-30T14:16:57.686Z"
+}
