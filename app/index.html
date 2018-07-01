@@ -21,24 +21,28 @@
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
           aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
+          <span class="sr-only">Toggle navigation</span>-
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">MDBS</a>
+        <a class="navbar-brand" href="index.html">MDBS</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active">
-            <a href="#">Link
-              <span class="sr-only">(current)</span>
-            </a>
+          <li>
+            <a href="activity.html">Activity</a>
           </li>
           <li>
-            <a href="#">Link</a>
+            <a href="opportunities.html">Opportunities</a>
+          </li>
+          <li>
+            <a href="requests.html">Requests</a>
+          </li>
+          <li>
+            <a href="bounties.html">Bounties</a>
           </li>
         </ul>
       </div>
@@ -49,136 +53,15 @@
   <!--END NAV-->
 
   <div class="container">
-      <h1>Mesh Demand & Bounty System</h1>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="panel panel-default">
-              <!-- Default panel contents -->
-              <div class="panel-heading">Mesh Service Bounties</div>
-              <div class="panel-body">
-                <p>Service bounties are publicly created bounties in which anyone can request service.
-                  By requesting service in a bounty, you can specify how much you want to pay to have a provider
-                  initiate service at a location. Providers can claim bounties by registering, then physically start service
-                  within a bounty location
-                </p>
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Mesh Network Opportunity</h1>
+        <p>.</p>
+      </div>
 
-                <table class="table">
-                    <thead>
-                        <tr>
-                          <th scope="col">#</th>
-                          <th scope="col">Loc</th>
-                          <th scope="col">Funding</th>
-                          <th scope="col">Status</th>
-                          <th scope="col">Action</th>
-                          <th scope="col">Funding</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td><a href="#">24.582, 67.173</a></td>
-                          <td>$30</td>
-                          <td>AVAIL</td>
-                          <td><button class="btn btn-default">Claim</button></td>
-                          <td><button class="btn btn-primary">Fund Bounty</button></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td><a href="#"></a>34.232, 77.322</a></td>
-                          <td>$220</td>
-                          <td>IN SERVICE</td>
-                          <td><button class="btn btn-success" disabled>CLAIM</button></td>
-                          <td><button class="btn btn-primary">Fund Service</button></td>
-                       
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td><a href="#">94.232, 33.455</a></td>
-                          <td>$300</td>
-                          <td>AVAIL</td>
-                          <td><button class="btn btn-success">Claim</button></td>
-                          <td><button class="btn btn-primary">Fund Bounty</button></td>
-                        </tr>
-                      </tbody>
-                </table>
-              </div>
-              <div class="row">
-                <div class="col-md-4"><button class="btn btn-primary">Create New Service Bounty</button></div>
-              </div>
-            </div>
-          </div>
-      </div><!--/end row-->
-  </div>
-  <!--END CONTAINER-->
+    </div>
+    <!--END CONTAINER-->
 
-  <div class="container">
-      <h1>Mesh Service Requsts</h1>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="panel panel-default">
-              <!-- Default panel contents -->
-              <div class="panel-heading">Service Requests</div>
-              <div class="panel-body">
-                <p>Anyone that wants meshnet service can submit a request for service. This requires the requester
-                  to fund a smart contract with tokens. Tokens will be put in escrow until a 
-                  service provider begins service, or a time limit has expired. Escrow will be used as prepaid service and will pay the service provider initially
-                 Requester can add a service bonuse to encourage initial setup and start of service.
-                  The higher the amount in bonus + escrow, the more likely a service provider will service the request.
-                </p>
-
-                <table class="table">
-                    <thead>
-                        <tr>
-                          <th scope="col">#</th>
-                          <th scope="col">Loc</th>
-                          <th scope="col">Escrow</th>
-                          <th scope="col">Status</th>
-                          <th scope="col">Action</th>
-                          <th scope="col">Setup Bonus</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td><a href="#">24.582, 67.173</a></td>
-                          <td>$30</td>
-                          <td>AVAIL</td>
-                          <td><button class="btn btn-success">Claim</button></td>
-                          <td>$60</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td><a href="#"></a>34.232, 77.322</a></td>
-                          <td>$250</td>
-                          <td>IN SERVICE</td>
-                          <td><button class="btn btn-success" disabled>CLAIM</button></td>
-                          <td>$300</td>
-                       
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td><a href="#">94.232, 33.455</a></td>
-                          <td>$300</td>
-                          <td>AVAIL</td>
-                          <td><button class="btn btn-success">Claim</button></td>
-                          <td>69.99</td>
-                        </tr>
-                      </tbody>
-                </table>
-              </div>
-              <div class="row">
-                <div class="col-md-4"><button class="btn btn-primary">Create New Service Request</button></div>
-              </div>
-            </div>
-          </div>
-      </div><!--/end row-->
-  </div>
-
-  <script type="text/javascript">
-    window.addEventListener('load', function () {
-      App.initChaindex();
-    })
-  </script>
 </body>
 
 </html>
