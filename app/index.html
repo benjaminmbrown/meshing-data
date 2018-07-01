@@ -57,10 +57,28 @@
       <div class="col-md-12">
         <h1>Mesh Network Opportunity</h1>
         <p>.</p>
+        <div>
+          <p>Your account:
+            <strong>
+                <span id="currentAccount"></span>
+            </strong> </p>
+        <p class="card-text">If you are a service provider, register your node to gain access.</p>
+        <form action="">
+            <div class="form-group">
+                <label for="inputNodeAddress">Your Node</label>
+                <input type="text" name="inputNodeAddress" class="form-control" id="inputNodeAddress" placeholder="ex: 0x12533418b...">
+            </div>
+        </form>
+        <button type="button" class="btn btn-primary" onclick="App.registerNode(); return false;">Register</button>
+        </div>
+        <div id="registeredProviders"></div>
       </div>
 
     </div>
     <!--END CONTAINER-->
+    <div id="status"></div>
+    <h6>Contract Events:</h6>
+    <div id="contractEvents" class="alert"></div>
 
 </body>
 
