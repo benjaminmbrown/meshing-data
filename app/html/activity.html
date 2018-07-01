@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mesh Demand and Mesh Bounty System</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <script src="./app.js"></script>
+    <!-- Latest compiled and minified CSS -->
+
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>-
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">MDBS</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="activity.html">Activity</a>
+                    </li>
+                    <li>
+                        <a href="opportunities.html">Opportunities</a>
+                    </li>
+                    <li>
+                        <a href="requests.html">Requests</a>
+                    </li>
+                    <li>
+                        <a href="bounties.html">Bounties</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!--END NAV-->
+
+    <div class="container">
+        <h1>Mesh Activity</h1>
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Activity</div>
+            <div class="panel-body">
+                <p>This tool reports transaction activity between service provider nodes and customers on the blockchain. Active transactions
+                    are the primary indicator that service providers are doing their job in a given location. Downtrending or inactivity entirely
+                    indicate that customers are leaving quickly. May represent opportunity for a provider to come in and help provide better service.
+                    Our <a href="opportunities.html">Mesh Service Opportunities</a> tool helps distill the data down to important opportunities.
+                </p>  
+                <table class="table">
+                        <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Loc</th>
+                              <th scope="col">Avg Retail Price</th>
+                              <th scope="col">Status</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td><a href="#">24.582, 67.173</a></td>
+                              <td>$.003/min</td>
+                              <td>DOWN</td>
+                            </tr>
+                          </tbody>
+                    </table>
+            </div>
+        </div>
+
+        
+    </div>
+
+    </div>
+    <!--END CONTAINER-->
+
+    </div>
+</body>
+
+</html>

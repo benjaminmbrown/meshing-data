@@ -34,6 +34,10 @@ window.App = {
 
       accounts = accs;
       account = accounts[0];
+       console.log('Accounts:', accounts);
+      console.log('Account[0]:', account);
+      App.setStatus('Successfully retrieved Accounts and user account info');
+
 
       //init functions
       this.refreshBalance();
