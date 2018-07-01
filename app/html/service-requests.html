@@ -53,7 +53,7 @@
   <!--END NAV-->
 
   <div class="container">
-      <h1>Mesh Service Requsts</h1>
+      <h1>Mesh Service Requests <span id="numServiceRequests"></span></h1>
       
       <div class="row">
         <div class="col-md-12">
@@ -84,16 +84,16 @@
                           <th scope="row">1</th>
                           <td><a href="#">24.582, 67.173</a></td>
                           <td>$30</td>
-                          <td>AVAIL</td>
+                          <td>Unclaimed</td>
                           <td><button class="btn btn-success">Claim</button></td>
                           <td>$60</td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
-                          <td><a href="#"></a>34.232, 77.322</a></td>
-                          <td>$250</td>
+                          <td><a href="#">34.232, 77.322</a></td>
+                          <td>$27</td>
                           <td>IN SERVICE</td>
-                          <td><button class="btn btn-success" disabled>CLAIM</button></td>
+                          <td><button class="btn btn-success" disabled>Claim</button></td>
                           <td>$300</td>
                        
                         </tr>
@@ -101,18 +101,56 @@
                           <th scope="row">3</th>
                           <td><a href="#">94.232, 33.455</a></td>
                           <td>$300</td>
-                          <td>AVAIL</td>
+                          <td>Unclaimed</td>
                           <td><button class="btn btn-success">Claim</button></td>
                           <td>69.99</td>
                         </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td><a href="#">14.232, 23.455</a></td>
+                            <td>$12</td>
+                            <td>Unclaimed</td>
+                            <td><button class="btn btn-success">Claim</button></td>
+                            <td>34</td>
+                          </tr>
                       </tbody>
                 </table>
-                <button class="btn btn-primary">Create New Service Request</button>
               </div>
             </div>
           </div>
       </div><!--/end row-->
+      <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h5>Create Service Request</h5></div>
+                <div class="panel-body">Request Service In Your Area
+                <form action="">
+                  <div class="form-group">
+                    <label for="inputLat">Latitude</flabel>
+                      <input type="text" name="inputLat" class="form-control" id="inputLat" placeholder="33.44">
+                      
+                      <label for="inputLng">Longitute</flabel>
+                        <input type="text" name="inputLng" class="form-control" id="inputLng" placeholder="72.11">
+                   
+                      </div>
+                      <label for="inputEscrow">Initial Escrow</flabel>
+                        <input type="number" name="inputEscrow" class="form-control" id="inputEscrow" placeholder="300">
+                   
+                </form>
+                <button type="button" class="btn btn-primary" onclick="App.createServiceRequest(); return false;">Create New Service Request</button>
+              </div>
+            </div>
+            </div>
+        </div>
+        </div>
+      </div>
+
+      <div id="status"></div>
+      <div id="contractEvents" class="alert"></div>
   </div>
+
 </body>
 
 </html>

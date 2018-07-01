@@ -40,9 +40,8 @@ window.App = {
       account = accounts[0];
       console.log('Accounts:', accounts);
       console.log('Account[0]:', account);
+      
       document.getElementById('currentAccount').innerText = account;
-      // App.setStatus('Successfully retrieved Accounts and user account info');
-
 
       //init functions
       App.refreshBalance();
@@ -59,32 +58,46 @@ window.App = {
       });
     }).then(function (txResponse) {
       console.log("res", txResponse)
+    }).catch(function(e){
+      console.log("err", e);
     })
   },
 
   createServiceRequest: function () {
+  
     var lat = document.getElementById('inputLat').value;
     var lng = document.getElementById('inputLng').value;
     var escrowAmt = document.getElementById('inputEscrow').value;
-
+    console.log("Request for Service:", lat, lng, escrowAmt)
     
     MeshBounty.deployed().then(function (instance) {
-      return instance.createServiceRequest(lat,lng, {value:escrowAmnt, from: account});
+      return instance.createServiceRequest.sendTransaction(lat,lng, { from: account, value:escrowAmt, gas:23000});
     }).then(function (txResponse) {
-      console.log("res", txResponse)
+      console.log("res", txResponse);
+      App.getNumberOfServiceRequests();
+    })
+    .catch(function(e){
+      console.log("err", e);
     })
   },
+
+  getNumberOfServiceRequests: function(){
+    MeshBounty.deployed().then(function (instance) {
+      return instance.getNumberServiceRequests.call();
+    }).then(function (numServiceRequests) {
+      
+      document.getElementById('numServiceRequests').innerText = numServiceRequests.toNumber();
+      console.log("requests", requests);
+    }).catch(function(e){
+      console.log("err", e);
+    })
+  },
+
   setStatus: function (message) {
     var status = document.getElementById("status");
     status.innerHTML = message;
     alert(message);
   },
-
-  refreshBalance: function () {
-
-
-  },
-
 
   watchContractEvents: function () {
     //any time an event occurs in the token contract, watch and display
