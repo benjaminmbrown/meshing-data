@@ -65,13 +65,13 @@
                             at a location. Providers can claim bounties by registering, then physically start service within
                             a bounty location
                         </p>
-
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Loc</th>
                                     <th scope="col">Funding</th>
+                                    <th scope="col">Install</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">Action</th>
                                     <th scope="col">Funding</th>
@@ -84,9 +84,10 @@
                                         <a href="#">24.582, 67.173</a>
                                     </td>
                                     <td>$30</td>
+                                    <td>$130</td>
                                     <td>AVAIL</td>
                                     <td>
-                                        <button class="btn btn-default">Claim</button>
+                                        <button class="btn btn-primary">Claim</button>
                                     </td>
                                     <td>
                                         <button class="btn btn-primary">Fund Bounty</button>
@@ -95,12 +96,13 @@
                                 <tr>
                                     <th scope="row">2</th>
                                     <td>
-                                        <a href="#"></a>34.232, 77.322</a>
+                                        <a href="#">34.232, 77.322</a>
                                     </td>
                                     <td>$220</td>
+                                    <td>$530</td>
                                     <td>IN SERVICE</td>
                                     <td>
-                                        <button class="btn btn-success" disabled>CLAIM</button>
+                                        <button class="btn btn-primary" disabled>Claim</button>
                                     </td>
                                     <td>
                                         <button class="btn btn-primary">Fund Service</button>
@@ -113,23 +115,52 @@
                                         <a href="#">94.232, 33.455</a>
                                     </td>
                                     <td>$300</td>
+                                    <td>$130</td>
                                     <td>AVAIL</td>
                                     <td>
-                                        <button class="btn btn-success">Claim</button>
+                                        <button class="btn btn-primary">Claim</button>
                                     </td>
                                     <td>
                                         <button class="btn btn-primary">Fund Bounty</button>
                                     </td>
-                                </tr>-
+                                </tr>
                             </tbody>
                         </table>
-                        <button class="btn btn-primary">Create New Service Bounty</button>
-                        
+                              
                     </div>
                 </div>
             </div>
         </div>
-        <!--/end row-->
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h5>Create Service Bounty</h5>
+                    </div>
+                    <div class="panel-body">Request Service In Your Area
+                        <form action="">
+                                <label for="inputBountyLat">Latitude</flabel>
+                                <input type="text" name="inputLat" class="form-control" id="inputBountyLat" placeholder="33.44">
+                                <label for="inputBountyLng">Longitute</flabel>
+                                <input type="text" name="inputBountyLng" class="form-control" id="inputBountyLng" placeholder="72.11">
+                                <label for="inputBountyEscrow">Initial Escrow</flabel>
+                                <input type="number" name="inputBountyEscrow" class="form-control" id="inputBountyEscrow" placeholder="300">
+                                <label for="inputBountyBonus">Installation Bonus</flabel>
+                                <input type="number" name="inputBountyBonus" class="form-control" id="inputBountyBonus" placeholder="300">
+                        </form>
+
+                        <button type="button" class="btn btn-primary" onclick="App.createServiceBounty(); return false;">Create New Service Bounty</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div id="status"></div>
+    <div id="contractEvents" class="alert"></div>
+    <!--/end row-->
     </div>
     <!--END CONTAINER-->
 

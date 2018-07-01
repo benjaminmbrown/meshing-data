@@ -42,7 +42,6 @@ contract MeshBounty {
         owner = msg.sender;
     }
 
-
      function getOwner() public view returns(address) { 
         return owner;
     }
@@ -58,19 +57,22 @@ contract MeshBounty {
 
     event ServiceRequestAdded(address _addre, uint amount, bytes32 lat, bytes32 lng);
 
-    function createServiceRequest (bytes32 _lat, bytes32 _lon ) public payable returns (uint serviceId){
+    function createServiceRequest (bytes32 _lat, bytes32 _lng) public payable returns (uint serviceId){
         serviceRequestCount++;
+        
         serviceRequests[serviceRequestCount] = ServiceRequest({
             creator: msg.sender,
             balanceInEscrow: msg.value,
+            provider:0,
             lat: _lat,
             lng: _lng
-        })
-        emit ServiceRequestAdded(msg.sender,amount,lat,lng)
+        });
+        emit ServiceRequestAdded(msg.sender,msg.value,_lat,_lng);
+        return serviceRequestCount;
     }
     
     function getNumberServiceRequests() public view returns (uint count){
-        return serviceRequestCount
+        return serviceRequestCount;
     }
 
     function getNumberServiceProviders() public view returns (uint count){
